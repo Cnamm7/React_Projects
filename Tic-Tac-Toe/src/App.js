@@ -90,6 +90,8 @@ export default function Game() {
     );
   });
 
+  const move = <li>Your are at move #{currentMove}</li>;
+
   return (
     <div className="game">
       <div className="game-board">
@@ -97,6 +99,9 @@ export default function Game() {
       </div>
       <div className="game-info">
         <ol>{moves}</ol>
+      </div>
+      <div className="game-info">
+        <ol>{move}</ol>
       </div>
     </div>
   );
